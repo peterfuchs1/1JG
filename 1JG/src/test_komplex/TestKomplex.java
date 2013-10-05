@@ -8,7 +8,7 @@ import org.junit.Test;
 
 
 public class TestKomplex {
-	private Komplex k=new Komplex(4, 2);
+	private Komplex k;
 	@Before
 	public void setUp() throws Exception {
 		
@@ -20,7 +20,10 @@ public class TestKomplex {
 
 	@Test
 	public final void testToString() {
-		fail("Not yet implemented"); // TODO
+		k=new Komplex(4,2);
+		String expecteds="4+2i";
+		String actuals=k.toString();
+		assertEquals(expecteds, actuals);
 	}
 
 	@Test
