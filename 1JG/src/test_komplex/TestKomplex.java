@@ -1,6 +1,6 @@
 package test_komplex;
 import static org.junit.Assert.*;
-import komplex.Komplex;
+
 
 import org.junit.After;
 import org.junit.Before;
