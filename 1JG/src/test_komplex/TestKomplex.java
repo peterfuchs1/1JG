@@ -21,7 +21,7 @@ public class TestKomplex {
 	@Test
 	public final void testToString() {
 		k=new Komplex(4,2);
-		String expecteds="4+2i";
+		String expecteds="4.0+2.0i";
 		String actuals=k.toString();
 		assertEquals(expecteds, actuals);
 	}
