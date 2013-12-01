@@ -7,7 +7,7 @@ public class Test {
 	 */
 	public static void main(String[] args) {
 		Komplex k=new Komplex(4,2);
-		System.out.println(k.toString());
+		System.out.println(k);
 
 	}
 
