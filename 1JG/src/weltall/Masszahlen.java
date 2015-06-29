@@ -16,10 +16,10 @@ public class Masszahlen {
 	public static void main(String[] args) {
 	//	Deklaration einer Variable:
 	//	Datentyp	Name der Variable ;
-		int			mondDurchmesser;
+		int			anzahlMonde;
 	//	Initialisierung einer Variablen mittel Zuweisungsoperator
 		// ganzzahlige Literale sind vom Datentyp int
-		mondDurchmesser = 3476;
+		anzahlMonde = 1;
 	//	Deklaration und sofortige Initialisierung
 	//	Datentyp	Name der Variable = Literal 
 		long mondBahnRadius;
@@ -31,7 +31,7 @@ public class Masszahlen {
 		// auﬂer ein F wird an das Literal angefuegt
 		mondUmlaufZeit = 27.3217F; // Tage
 		
-		float	orbitalGeschwindigkeit = 1.032F; // km/s
+		float	orbitalGeschwindigkeit = 1.023F; // km/s
 		
 		// Berechnung der Laenge der Mondumlaufbahn - Annaeherung
 		// U = 2 * r * pi
@@ -48,9 +48,11 @@ public class Masszahlen {
 		
 		System.out.println("Mond unser Trabant!");
 		System.out.println("-------------------");
-
+		System.out.println("Die Erde besitzt "+anzahlMonde+" Mond(e)!");
+		System.out.println("Berechnung mittels Umlaufradius:");
 		System.out.println("Mondumlaufbahn1 (double): "+mulb1+"km");
 		System.out.println("Mondumlaufbahn2 (float): "+mulb2+"km");
+		System.out.println("Berechnung mittels Umlaufzeit und Geschwindigkeit");
 		System.out.println("Mondumlaufbahn3 (double): "+mulb3+"km");
 		System.out.println("Mondumlaufbahn4 (float): "+mulb4+"km");
 		
