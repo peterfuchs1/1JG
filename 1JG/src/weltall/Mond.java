@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  */
 
-public class Masszahlen {
+public class Mond {
 
 	public static void main(String[] args) {
 	//	Deklaration einer Variable:
