@@ -16,7 +16,7 @@ public class Mond2 {
 	public static void main(String[] args) {
 	// Deklaration einer Konstante:
 	// Datentyp	Name der Variable ;
-		final int	anzahlMonde;
+		final int anzahlMonde;
 	// Initialisierung einer Konstanten mittel Zuweisungsoperator
 	// ganzzahlige Literale sind vom Datentyp int
 		anzahlMonde = 1;

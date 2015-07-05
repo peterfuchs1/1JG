@@ -16,7 +16,7 @@ public class Mond {
 	public static void main(String[] args) {
 	// Deklaration einer Variable:
 	// Datentyp	Name der Variable ;
-		int			anzahlMonde;
+		int	anzahlMonde;
 	// Initialisierung einer Variablen mittel Zuweisungsoperator
 	// ganzzahlige Literale sind vom Datentyp int
 		anzahlMonde = 1;
@@ -25,14 +25,14 @@ public class Mond {
 	// ganzzahlige Literale mit L angestellt sind vom Datentyp long
 		mondBahnRadius = 383100L;	// km
 		
-		float	mondUmlaufZeit;
+		float mondUmlaufZeit;
 	// Flieﬂkommazahlen sind vom Datentyp double
 	// auﬂer ein F wird an das Literal angefuegt
 		mondUmlaufZeit = 27.3217F; // Tage
 
 	// Deklaration und sofortige Initialisierung
 	// Datentyp	 der Variable ist mit Datentyp des Literals ident
-		float	orbitalGeschwindigkeit = 1.023F; // km/s
+		float orbitalGeschwindigkeit = 1.023F; // km/s
 		
 	// Berechnung der Laenge der Mondumlaufbahn - Annaeherung
 	// U = 2 * r * pi
