@@ -14,31 +14,32 @@ import javax.swing.JOptionPane;
 public class Mond2 {
 
 	public static void main(String[] args) {
-	//	Deklaration einer Konstante:
-	//	Datentyp	Name der Variable ;
+	// Deklaration einer Konstante:
+	// Datentyp	Name der Variable ;
 		final int	anzahlMonde;
-	//	Initialisierung einer Konstanten mittel Zuweisungsoperator
-		// ganzzahlige Literale sind vom Datentyp int
+	// Initialisierung einer Konstanten mittel Zuweisungsoperator
+	// ganzzahlige Literale sind vom Datentyp int
 		anzahlMonde = 1;
-	//	Deklaration und sofortige Initialisierung
-	//	Datentyp	Name der Konstanten = Literal 
+
 		final long mondBahnRadius;
-		// ganzzahlige Literale mit L angestellt sind vom Datentyp long
+	// ganzzahlige Literale mit L angestellt sind vom Datentyp long
 		mondBahnRadius = 383100L;	// km
 		
 		final float	mondUmlaufZeit;
-		// Flieﬂkommazahlen sind vom Datentyp double
-		// auﬂer ein F wird an das Literal angefuegt
+	// Flieﬂkommazahlen sind vom Datentyp double
+	// auﬂer ein F wird an das Literal angefuegt
 		mondUmlaufZeit = 27.3217F; // Tage
 		
+	// Deklaration und sofortige Initialisierung
+	// Datentyp	 der Variable ist mit Datentyp des Literals ident		
 		final float	orbitalGeschwindigkeit = 1.023F; // km/s
 		
-		// Berechnung der Laenge der Mondumlaufbahn - Annaeherung
-		// U = 2 * r * pi
+	// Berechnung der Laenge der Mondumlaufbahn - Annaeherung
+	// U = 2 * r * pi
 		double mulb1 = 2 * mondBahnRadius * Math.PI;
 		
-		// Achtung die Konstante Math.PI ist vom Datentyp double
-		// und muss deshalb (down)gecastet werden!
+	// Achtung die Konstante Math.PI ist vom Datentyp double
+	// und muss deshalb (down)gecastet werden!
 		float mulb2 = 2 * mondBahnRadius * (float)Math.PI;
 
 	// Berechnung mittels Dauer und Geschwindigkeit
