@@ -3,36 +3,41 @@
  */
 package weltall;
 
-import javax.swing.JOptionPane;
-
 /**
+ * Beispiel fuer:
+ * Kompetenzbereich: strukturierte Programmierung
+ * ** Datentypen (Ganzzahl und Gleitkommazahl)
+ * ** Literale
+ * 
+ * Kompetenzbereich: Algorithmen und Datenstrukturen
+ * ** Variablen und Konstanten 
  * @author Walter Rafeiner-Magor
  * @version 29.06.2015
  *
  */
 
-public class Mond {
+public class Mond1 {
 
 	public static void main(String[] args) {
-	// Deklaration einer Variable:
+	// Deklaration einer Konstante:
 	// Datentyp	Name der Variable ;
-		int	anzahlMonde;
-	// Initialisierung einer Variablen mittel Zuweisungsoperator
+		final int anzahlMonde;
+	// Initialisierung einer Konstanten mittel Zuweisungsoperator
 	// ganzzahlige Literale sind vom Datentyp int
 		anzahlMonde = 1;
 
-		long mondBahnRadius;
+		final long mondBahnRadius;
 	// ganzzahlige Literale mit L angestellt sind vom Datentyp long
 		mondBahnRadius = 383100L;	// km
 		
-		float mondUmlaufZeit;
+		final float	mondUmlaufZeit;
 	// Flieﬂkommazahlen sind vom Datentyp double
 	// auﬂer ein F wird an das Literal angefuegt
 		mondUmlaufZeit = 27.3217F; // Tage
-
+		
 	// Deklaration und sofortige Initialisierung
-	// Datentyp	 der Variable ist mit Datentyp des Literals ident
-		float orbitalGeschwindigkeit = 1.023F; // km/s
+	// Datentyp	 der Variable ist mit Datentyp des Literals ident		
+		final float	orbitalGeschwindigkeit = 1.023F; // km/s
 		
 	// Berechnung der Laenge der Mondumlaufbahn - Annaeherung
 	// U = 2 * r * pi
