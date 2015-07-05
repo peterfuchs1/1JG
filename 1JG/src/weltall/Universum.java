@@ -39,13 +39,18 @@ public class Universum {
 		float alterMittelwert = 13.8F; // Milliarden Jahre
 		float delta = 0.04F;
 	
+	// Die Berechnung kann auch bei der Initialisierung erfolgen
+		float alterMinimum = 13.8F - delta;
+		float alterMaximum = 13.8F + delta;
+	// oder erst bei der Ausgabe!	
+		
 		System.out.println("Unser Universum ist einzigartig!");
 		System.out.println("--------------------------------");
 		System.out.println("Es hat einen Durchmesser von mehr als "+radius+" Mrd Lichtjahre!");
 		System.out.println("Die sichtbare Masse betraegt: "+masse+"kg");
 		System.out.println("Die Dichte betraegt: "+dichte+"g/cm³");
 		System.out.println("Das Mindestalter des Universums betraegt "+(alterMittelwert-delta)+" Mrd Jahre");
-		System.out.println("Das Mindestalter des Universums betraegt "+(alterMittelwert+delta)+" Mrd Jahre");
+		System.out.println("Das Maximalalter des Universums betraegt "+(alterMittelwert+delta)+" Mrd Jahre");
 
 	}
 }
