@@ -2,14 +2,12 @@
  * 
  */
 package rw;
-
-import java.util.Calendar;
-
 /**
  * Beispiel fuer:
  * Kompetenzbereich: strukturierte Programmierung
  * ** Datentypen (Ganzzahl, Gleitkommazahl und String)
  * ** Literale
+ * ** kopfgesteuerte Schleifen
  * 
  * Kompetenzbereich: Algorithmen und Datenstrukturen
  * ** Variablen und Konstanten 
@@ -27,12 +25,14 @@ public class Rechnung1 {
 	// ansonsten einfach:
 		final String TO_DAY = "2015-09-23";
 		final String UEBERSCHRIFT = "Artikel          Anzahl    Kosten      Summe";
+		final String FUSS_ZEILE = "Seite ";
+		final int ZEILEN = 80;
 		
 	// Initialisierung einer Konstanten mittel Zuweisungsoperator
 	// ganzzahlige Literale sind vom Datentyp int
 		KOPF_ZELE ="Rechnung der Fa. Mayer vom "+TO_DAY;
-		
-		final String FUSS_ZEILE = "Seite ";
+
+	// Variablen Deklaration und sofortige Initialisierung
 		String artikel1 = "USB-Stick 16GB  ";
 		String artikel2 = "SDD 512GB       ";
 		double kosten1 = 11.90;
@@ -40,7 +40,6 @@ public class Rechnung1 {
 		int zeile = 1;
 		int seite = 1;
 		
-		final int ZEILEN = 80;
 		// Wir starten mit der Kopfzeile
 		System.out.println(KOPF_ZELE);
 		zeile += 1;
@@ -66,7 +65,7 @@ public class Rechnung1 {
 		String summe = "Gesamtsumme betraegt:                   "+gesamt;
 		zeile += 1;
 		System.out.println(summe);
-		
+		// Wir geben die Fusszeile an richtiger Stelle aus
 		while (zeile < ZEILEN){
 			System.out.println();
 			zeile += 1;
