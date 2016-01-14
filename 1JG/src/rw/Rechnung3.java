@@ -10,14 +10,15 @@ import javax.swing.JOptionPane;
  * Kompetenzbereich: strukturierte Programmierung
  * ** Datentypen (Ganzzahl, Gleitkommazahl und String)
  * ** Literale
- * ** kopf- und fußgesteuerte Schleifen
- * ** Verzweigung
- * ** Methoden erstellen und verwenden
  * 
  * Kompetenzbereich: Algorithmen und Datenstrukturen
- * ** Variablen und Konstanten 
+ * ** Variablen und Konstanten
+ * ** kopf- und fußgesteuerte Schleifen (vorzeitiger Abbruch)
+ * ** Verzweigung, Mehrfachverzweigung
+ * ** Methoden erstellen und verwenden
+ *  
  * @author Walter Rafeiner-Magor
- * @version 29.06.2015
+ * @version 23.07.2015
  *
  */
 
@@ -72,17 +73,18 @@ public class Rechnung3 {
 			default: message=artikel5+" Kosten pro Stuek: "+kosten5; break;
 			}
 			anzahl=Integer.parseInt(JOptionPane.showInputDialog(null,message,"Wieviele Artikel wollen Sie kaufen?",JOptionPane.PLAIN_MESSAGE));
-			if (anzahl >= 0)
-				switch(artikelZaehler)
-				{
-				case 1: anzahl1=anzahl; break;
-				case 2: anzahl2=anzahl; break;
-				case 3: anzahl3=anzahl; break;
-				case 4: anzahl4=anzahl; break;
-				case 5: anzahl5=anzahl; break;
-				}	
-				artikelZaehler++;
-		} while (anzahl >=0 && artikelZaehler <=5);
+			// sofortiger Abruch!
+			if (anzahl < 0) break;
+			switch(artikelZaehler)
+			{
+			case 1: anzahl1=anzahl; break;
+			case 2: anzahl2=anzahl; break;
+			case 3: anzahl3=anzahl; break;
+			case 4: anzahl4=anzahl; break;
+			case 5: anzahl5=anzahl; break;
+			}	
+			artikelZaehler++;
+		} while (artikelZaehler <=5);
 		// Rechnung erstellen
 		// Wir starten mit der Kopfzeile
 		System.out.println(KOPF_ZELE);
