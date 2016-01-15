@@ -14,6 +14,8 @@ public class Min {
 		System.out.println("Max byte:"+Byte.MAX_VALUE);
 		System.out.println(""+7/10);
 		System.out.println(""+7/10.0);
+		long s = 291745225931L;
+		
 	}
 
 	private static int min(int a, int b) {
