@@ -1,4 +1,5 @@
 package schleife;
+import simple.Input;
 /**
  * Ich mag SEW, bis ich genug habe.
  * 
@@ -14,11 +15,12 @@ public class IchMagSEW
      */
     public static void main(String[] args)
     {
-        boolean nochmals=true;
-        do {        
+        boolean nochmals;
+        do 
+        {        
             System.out.println("Ich mag SEW!");
-            nochmals=simple.Input.getBoolean("Magst du SEW?");
+            nochmals=Input.getBoolean("Magst du SEW?");
         }
-        while(nochmals);
+        while(nochmals==true);
     }
 }
