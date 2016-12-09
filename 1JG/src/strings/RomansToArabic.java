@@ -18,6 +18,7 @@ public class RomansToArabic {
 	 * @param args
 	 *            Argumente, welche beim Start mitgegeben wurden
 	 */
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		int zahl = 0;
 		String eingabe;
@@ -66,6 +67,7 @@ public class RomansToArabic {
 	 *            Ein Roman-String
 	 * @return correct value?
 	 */
+	@SuppressWarnings("unused")
 	public static boolean validate(String r) {
 		boolean ret = false;
 		boolean correct = true;

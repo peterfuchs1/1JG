@@ -6,6 +6,7 @@ public class Beispiel {
 	/**
 	 * @param args
 	 */
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		Beispiel b = new Beispiel();
 		// TODO Auto-generated method stub

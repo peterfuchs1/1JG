@@ -10,6 +10,7 @@ package arrays;
 public class Quadrate {
 	private int[] array;
 
+	@SuppressWarnings("unused")
 	public Quadrate() {
 		array = new int[10];
 		int [ ] array2 = {1,2,3,4,5};

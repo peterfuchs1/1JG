@@ -20,6 +20,7 @@ public class Universum {
 	/**
 	 * @param args
 	 */
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 	// Deklaration einer Variable:
 	// Datentyp und	Name der Variable ;		

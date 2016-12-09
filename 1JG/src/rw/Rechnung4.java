@@ -25,6 +25,7 @@ import javax.swing.JOptionPane;
 
 public class Rechnung4 {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 	// Deklaration einer Konstante:
 	// Datentyp	Name der Variable ;
